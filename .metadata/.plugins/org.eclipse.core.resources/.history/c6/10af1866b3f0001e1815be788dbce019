@@ -1,0 +1,15 @@
+package set;
+
+import java.util.HashSet;
+
+public class StudentHashTask {
+	public static void main(String[] args) {
+		//hashSet 객체 생성
+		HashSet<Student> set = new HashSet<>();
+		
+		//Student 객체 생성 및 equals 메소드 테스트
+		Student st1 = new Student(1, "김주선");
+		
+		
+	}
+}

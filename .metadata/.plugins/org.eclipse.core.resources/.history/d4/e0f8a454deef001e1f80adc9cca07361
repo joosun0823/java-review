@@ -1,0 +1,31 @@
+package ex01;
+
+public class School {
+//김주선
+	
+	//필드
+	Student[] students;
+	int studentCount;
+	
+	//생성자 , 초기값 설정
+	public School() {
+		super();
+		this.students = new Student[30]; //최대 30명
+		this.studentCount = 0; 
+	}
+	
+	//메소드
+	//학생등록 메소드
+	//현재 학생수 30명 이상일시  등록할 수 없음 false
+	
+	boolean registerStudent(Student student) {
+		if(this.studentCount > 29) {
+			return false;
+		}
+		this.students[studentCount] = student;
+		this.studentCount++;
+		student.studentNumber = this.studentCount;
+		return true;
+	}
+	
+}

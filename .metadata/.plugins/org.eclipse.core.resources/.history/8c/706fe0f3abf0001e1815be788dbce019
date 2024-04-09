@@ -1,0 +1,18 @@
+package set;
+
+import java.util.HashSet;
+
+public class HashSetTest1 {
+	public static void main(String[] args) {
+		HashSet<String> animalSet = new HashSet<>();
+		
+		animalSet.add("고양이");
+		animalSet.add("강아지");
+		animalSet.add("토끼");
+		animalSet.add("호랑이");
+		animalSet.add("기린");
+		animalSet.add("하마");
+		
+		System.out.println(animalSet);
+	}
+}

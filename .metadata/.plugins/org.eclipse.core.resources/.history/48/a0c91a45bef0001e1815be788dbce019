@@ -1,0 +1,73 @@
+package map;
+
+import java.util.HashMap;
+import java.util.Scanner;
+
+public class HashMapTask {
+	// 카페메뉴
+	// 아메리카노 2000
+	// 카페라떼 2500
+	// 바닐라라떼 4000
+	// 초코라떼 4000
+	
+	// HashMap에 저장
+	// 출력과 입력
+	// 1. 아메리카노
+	// 2. 카페라떼
+	// 3. 바닐라 라떼
+	// 4. 초코라떼
+	// 번호를 선택하세요 : 2
+	// 카페라떼의 가격은 2500원입니다
+	
+	public static void main(String[] args) {
+		// hashmap 객체 생성
+		// 키는 번호 , value는 커피 메뉴로 put
+		// 입력 클래스
+		// "번호를 선택하세요" 출력
+		// 입력 메소드
+		// 스위치문으로 num 
+		// 각각 get(num) 출력하기
+				
+		
+//		HashMap<Integer, String> menu = new HashMap<>();
+//		
+//		menu.put(1,"아메리카노" );
+//		menu.put(2,"카페라떼" );
+//		menu.put(3,"바닐라 라떼" );
+//		menu.put(4,"초코라떼" );
+//		
+//		
+//		Scanner sc = new Scanner(System.in);
+//		System.out.println("번호를 선택하세요 : ");
+//		int num = sc.nextInt();
+//		
+//		switch(num) {
+//		case 1:
+//			System.out.println(menu.get(num)+"의 가격은 2000원입니다");
+//			break;
+//		case 2:
+//			System.out.println(menu.get(num)+"의 가격은 2500원입니다");
+//			break;
+//		case 3:
+//			System.out.println(menu.get(num)+"의 가격은 4000원입니다");
+//			break;
+//		case 4:
+//			System.out.println(menu.get(num)+"의 가격은 4000원입니다");
+//			break;
+//		}
+		
+		
+		HashMap<String, Integer> menu = new HashMap<>();
+		menu.put("아메리카노", 2000);
+		menu.put("카페라떼", 2500);
+		menu.put("바닐라 라떼", 4000);
+		menu.put("초코라떼", 4000);
+		
+		System.out.println("전체메뉴");
+		for(String menuName : menu.keySet()) {
+			System.out.println( menuName + ": " + menu.get(menuName) + "원");
+		}
+		
+
+	}
+}

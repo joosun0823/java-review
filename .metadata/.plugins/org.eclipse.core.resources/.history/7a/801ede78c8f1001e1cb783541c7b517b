@@ -1,0 +1,10 @@
+package lotto;
+
+public class Lotto {
+	//로또 번호 생성 메소드
+	void
+	
+	
+	
+	//수를 입력받아 반복문으로 번호생성 메소드 호출
+}

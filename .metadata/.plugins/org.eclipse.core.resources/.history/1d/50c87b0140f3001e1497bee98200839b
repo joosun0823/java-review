@@ -1,0 +1,23 @@
+package final1;
+
+public class Main {
+//   Main 클래스
+//   - 사용자가 메뉴를 통해 게시물을 작성, 삭제, 조회할 수 있어야 한다
+   public static void main(String[] args) {
+	Board b = new Board();
+	
+	b.addPost("제목1","제목2");
+//	System.out.println("=============");
+	
+//	try {
+//		b.deletePost(0);
+//	} catch (IllegalArgumentException e) {
+//
+//		e.printStackTrace();
+//	}
+//	c.deletePost(0);
+//	System.out.println("===========");
+//	b.getAllposts();
+	
+	  }
+}

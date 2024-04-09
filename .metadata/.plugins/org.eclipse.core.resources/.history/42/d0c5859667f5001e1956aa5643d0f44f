@@ -1,0 +1,31 @@
+package student;
+
+public class Student {
+	//Student 클래스
+	//필드 학생 이름, 학생 점수, 학생 고유 번호 접근제한자 private으로 해보셈
+	//학생 정보 보기 메소드
+	
+	//필드
+	private int studentNum;
+	private String studentName;
+	private int[] grade = new int[3];
+	
+	
+	//생성자
+	public Student(String studentName, int[] grade) {
+		super();
+		this.studentName = studentName;
+		this.grade = grade;
+		this.studentNum = 1;
+	}
+
+
+	//메소드
+	//학생 정보 조회 메소드
+	void showStudentInfo() {
+		System.out.println(studentNum + ". " + studentName + "[국어점수 :" + grade[0] + ", 수학점수 : " + grade[1] + ", 영어점수: " + grade[2] + "]");
+	}
+	
+	
+	//toString 오버라이딩
+}

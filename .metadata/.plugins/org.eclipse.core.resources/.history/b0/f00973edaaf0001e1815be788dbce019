@@ -1,0 +1,10 @@
+package review;
+
+public class Main {
+	public static void main(String[] args) {
+		
+		UserVO user = new UserVO("abc1", "1234","홍길동", 20);
+		System.out.println(user);
+		
+	}
+}

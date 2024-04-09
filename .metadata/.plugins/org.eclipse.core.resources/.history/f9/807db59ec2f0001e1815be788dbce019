@@ -1,0 +1,37 @@
+package map;
+
+import java.util.HashMap;
+import java.util.Iterator;
+
+public class HashMapTest2 {
+	public static void main(String[] args) {
+		HashMap<String, Integer> mart = new HashMap<>();
+		
+		//추가
+		mart.put("새우깡", 1500);
+		mart.put("초코칩쿠키", 2500);
+		mart.put("포테토칩", 2500);
+		mart.put("칸쵸", 2000);
+		
+		System.out.println(mart);
+		
+		//조회 .get(key)
+		System.out.println(mart.get("새우깡"));
+		
+		//containsKey
+		System.out.println(mart.containsKey("칸쵸"));
+		//containsValue
+		System.out.println(mart.containsValue(1500));
+		
+		//keySet -> key만 가져오기
+		System.out.println(mart.keySet());
+		Iterator<String> iter = mart.keySet().iterator();
+		System.out.println(iter);
+		System.out.println(iter.next());
+		
+		while(iter.hasNext()) {
+			System.out.println(iter.next());
+		}
+		
+	}
+}

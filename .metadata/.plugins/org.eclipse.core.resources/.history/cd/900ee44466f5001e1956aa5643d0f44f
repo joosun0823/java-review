@@ -1,0 +1,27 @@
+package student;
+
+public class Student {
+	//Student 클래스
+	//필드 학생 이름, 학생 점수, 학생 고유 번호 접근제한자 private으로 해보셈
+	//학생 정보 보기 메소드
+	
+	//필드
+	private int studentNum;
+	private String name;
+	private int[] grade;
+	
+	
+	//생성자
+	public Student(int studentNum, String name, int[] grade) {
+		super();
+		this.studentNum = studentNum;
+		this.name = name;
+		this.grade = grade;
+	}
+
+	
+	
+	//메소드
+	
+	
+}

@@ -1,0 +1,29 @@
+package map;
+
+public class HashMapTask {
+	// 카페메뉴
+	// 아메리카노 2000
+	// 카페라떼 2500
+	// 바닐라라떼 4000
+	// 초코라떼 4000
+	
+	// HashMap에 저장
+	// 출력과 입력
+	// 1. 아메리카노
+	// 2. 카페라떼
+	// 3. 바닐라 라떼
+	// 4. 초코라떼
+	// 번호를 선택하세요 : 2
+	// 카페라떼의 가격은 2500원입니다
+	
+	public static void main(String[] args) {
+		// hashmap 객체 생성
+		// 키는 커피 메뉴 , value는 가격으로
+		// 입력 클래스
+		// 스위치문사용
+		// map.get()을 이용해서 벨류값 가져오기
+		
+		HashMap<String, Integer>
+		
+	}
+}
